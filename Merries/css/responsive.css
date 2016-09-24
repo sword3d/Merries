@@ -1,0 +1,254 @@
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+@media only screen and (max-width: 992px) {
+
+h1 {
+	margin-bottom: 30px;
+	margin-top: 5px;
+}
+
+.container {
+	width: 600px;
+}
+.two_box_left {
+	width: 99%;
+	padding-top: 30px;
+}
+.two_box_right {
+	width: 1%;
+}
+.main_foto img {
+	width: 365px;
+	height: auto;
+}
+.main_foto {
+	float: right;
+	margin: 0;
+}
+.information_box {
+	margin-top: 80px;
+	float: right;
+}
+
+.four_box {
+	width: 50%;
+}
+.three_box {
+	width: 390px;
+	margin: 10px auto;
+	float: none;
+}
+.three_box_img img {
+	float: left;
+	margin-right: 15px;
+}
+.three_box_cont {
+	padding-top: 95px;
+}
+.three_box_1 {
+  margin-top: 0px;
+}
+.three_box_3 {
+  margin-top: 0px;
+}
+
+.box_4 {
+	padding-top: 100px;
+}
+
+.present_left_box {
+	width: 100%;
+	float: none;
+}
+.present_right_box {
+	float: none;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.present_left_box2 {
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	text-align: center;
+}
+.present_right_box2 {
+	float: none;
+	width: 100%;
+}
+.chat>img {
+	width: 100%;
+}
+
+.rabbit_1 {
+  top: 610px;
+  left: 30px;
+}
+.rabbit_2 {
+  top: 400px;
+  right: 0px;
+}
+.rabbit_3 {
+  position: static;
+  text-align: center;
+}
+.rabbit_4 {
+  top: -85px;
+  left: 50%;
+  margin-left: -78px;
+}
+.rabbit_end_1 {
+  top: 50px;
+  left: 230px;
+}
+.rabbit_end_1 img {
+	height: 115px;
+	width: auto;
+}
+.rabbit_end_2 {
+  top: 330px;
+  right: 0px;
+}
+.rabbit_end_2 img {
+	height: 135px;
+	width: auto;
+}
+.rabbit_end_3 {
+	left: 0;
+}
+.rabbit_end_3 img {
+	height: 150px;
+	width: auto;
+}
+
+.campaignslist_box_left {
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.campaignslist_box_left img {
+	max-width: 100%;
+	height: auto;
+}
+.campaignslist_box_right {
+	text-align: center;
+}
+.pb_60 {
+	padding-bottom: 20px;
+}
+.campaignslist_wr {
+	padding-top: 40px;
+}
+
+
+
+.main_foto2 {
+	display: none;
+}
+.main_foto_resp {
+	display: block;
+	
+}
+.pt_resp {
+	padding-top: 25px;
+}
+}
+
+
+
+@media only screen and (max-width: 620px) {
+
+body {
+	min-width: 320px;
+}
+h1 {
+	font-size: 50px;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+h3 {
+	background-image: none !important;
+}
+.container {
+	width: 300px;
+}
+.main_foto img {
+	width: 190px;
+	margin-top: 00px;
+}
+.logo_merries img {
+	width: 145px;
+	height: auto;
+	margin-bottom: 25px;
+}
+.two_box_left {
+	padding-top: 0;
+}
+.rabbit_1,.rabbit_2,.rabbit_4,.rabbit_end_1,.rabbit_end_2,.rabbit_end_3 {
+  display: none;
+}
+.information_box {
+	float: none;
+	width: 100%;
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 19px;
+}
+.btn_blue, .btn_pink, .btn_blue2  {
+	padding: 10px 20px;
+	padding-right: 50px;
+	font-size: 16px;
+}
+.btn_blue2, .btn_blue3 {
+	min-width: 0;
+}
+.four_box {
+	width: 100%;
+}
+.box_3,.box_4 {
+	padding-top: 40px;
+}
+.three_box {
+	width: 100%;
+}
+.three_box_img {
+	width: 120px;
+}
+.three_box_img img {
+	width: 100%;
+	height: auto;
+}
+.three_box_cont {
+	padding-top: 20px;
+}
+.present_left_box img {
+	width: 100%;
+	height: auto;
+}
+.present_right_box {
+	width: 100%;
+}
+.present_left_box2 {
+	margin-bottom: 15px;
+}
+.box_5  {
+	padding: 40px 0;
+}
+.pb_70 {
+	padding-bottom: 30px;
+}
+.four_box_wr {
+	margin: 0;
+}
+.campaignslist_wr {
+	padding-top: 0px;
+}
+
+.col-50pr, .col-33pr {
+  width: 100%;
+  float: none;
+}
+
+
+}
+
