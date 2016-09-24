@@ -56,6 +56,13 @@
 			  itemSelector: '.four_box',
 			});
 
+            $('.btn_open_top_box').on('click', function(){
+                $('.masonry').masonry({
+                  // options
+                  itemSelector: '.four_box',
+                });             
+            });
+
 			$('.btn_open_top_box').on('click', function(){
                 $('.masonry2').masonry({
 				  // options
@@ -144,6 +151,10 @@
                      required: true,
                  },
 
+                 dete_birth:{
+                     required: true,
+                 },
+
                 
 
                 
@@ -220,6 +231,10 @@
                  housing:{
                      required: "Это поле обязательно для заполнения",
                  },
+
+                 dete_birth:{
+                     required: "Это поле обязательно для заполнения",
+                 },
                 
                 
 
@@ -243,6 +258,10 @@
                     required: true,
                     email: true
                 },
+                
+                message:{
+                    required: true,
+                },
 
 
            },
@@ -260,6 +279,11 @@
                 email:{
                     required: "Это поле обязательно для заполнения",
                     email: "E-mail введен не корректно",
+
+                },
+
+                message:{
+                    required: "Это поле обязательно для заполнения",
 
                 },
 

@@ -154,8 +154,11 @@
 
                     
                     <div class="h3_wr">
-                        <h3 style="background:  url(images/cloud_1.png) center center no-repeat;">Поделитесь вашими впечатлениями</h3>
+                        <h3>Поделитесь вашими впечатлениями</h3>
                     </div>
+                    <!-- <div class="h3_wr">
+                        <h3 style="background:  url(images/cloud_1.png) center center no-repeat;">Поделитесь вашими впечатлениями</h3>
+                    </div> -->
 
                     <div class="rabbit_3">
                         <img src="images/rabbit_3.png" alt="">
@@ -175,6 +178,9 @@
                                 <div class="cont_box">
                                     <strong>Mom from <span class="icon_star"></span><span class="icon_star"></span>:</strong>
                                     <p>
+                                    <div class="image_box">
+                                        <img src="images/rabbit_1.png"  alt="">
+                                    </div>
                                     Наша семья рекомендует самые классные, мягкие, супер влаговпитывающие памперсы Меррис  второй малыш
                                     Наша семья рекомендует самые классные, мягкие, супер влаговпи <br>
                                     <span class="text_blue">＃newmwrries</span>
@@ -186,6 +192,9 @@
                             <div class="four_box">
                                 <div class="cont_box">
                                     <strong>Mom from <span class="icon_star"></span><span class="icon_star"></span>:</strong>
+                                    <div class="image_box">
+                                        <img src="images/rabbit_1.png"  alt="">
+                                    </div>
                                     <p>
                                     Наша семья рекомендует самые классные, мягкие, супер влаговпитывающие памперсы Меррис  второй малыш
                                     <br>
@@ -393,7 +402,7 @@
 
                     
                     <div class="h3_wr">
-                        <h3 style="background:  url(images/cloud_2.png) center center no-repeat;">Как принять участие?</h3>
+                        <h3>Как принять участие?</h3>
                     </div>
 
                     <div class="align_center">
@@ -433,11 +442,6 @@
                         </div>           
                     
                     </div>
-
-
-                    <div class="align_center">
-                        <p class="fz12">*The prize will be delivered about one week from winner announcement.(tentative)</p>
-                    </div>
                     
                </div>
 
@@ -449,7 +453,7 @@
 
                     
                     <div class="h3_wr">
-                        <h3 style="background:  url(images/cloud_3.png) center center no-repeat;">Представляем новые Merries!</h3>
+                        <h3>Представляем новые Merries!</h3>
                     </div>
 
                     <div class="align_center">
@@ -580,7 +584,7 @@
                             </div>
                             <div class="form_box">
                                 <label>Сообщение</label>
-                                <textarea></textarea>
+                                <textarea name="message"></textarea>
                             </div>
 
                             <div class="align_center">
@@ -696,7 +700,7 @@
 
                                             <div class="calendar_wr">
                                                 <span class="icon_calendar"></span>
-                                                <input class="calendar" data-lang="ru" data-years="1990-2016" data-format="LL" data-sundayfirst="false" placeholder=""  />
+                                                <input required class="calendar" data-lang="ru" data-years="1990-2016" data-format="LL" data-sundayfirst="false" placeholder="" />
                                             </div>
                                             
 
@@ -729,7 +733,7 @@
                                             <label for="radio-21">Да</label>
                                         </li>
                                         <li>
-                                            <input type="radio" class="radio btn_form_box_open" id="radio-22" name="radio2">
+                                            <input type="radio" class="radio btn_form_box_open" id="radio-22" name="radio2" checked>
                                             <label for="radio-22">Нет</label>
                                         </li>
 
@@ -738,7 +742,7 @@
                                 </div>
                             </div>
 
-                            <div class="form_box_open">
+                            <div class="form_box_open active" style="display: block;">
                                 <div class="row clearfix">
                                 
                                     <div class="col-33pr">
@@ -780,10 +784,28 @@
                             </div>
                             <br>
 
+                            <div class="title_thanks" id="sample_ok">
+                                Спасибо! Ваша заявка отправлена.
+                            </div>
+                            <div class="title_fail" id="sample_fail">
+                                Ошибка! Ваша заявка не отправлена.
+                            </div>
+
                             <div class="align_center">
                                 <button class="btn_blue">Отправить</button>
                             </div>
+                            <br>
+                            
+                            <div class="align_center">
+                                <label>Для завершения регистрации авторизируйтесь пожалуйста в одной из социальных сетей</label>
+                                <ul class="social_box">
+                                    <li><a href=""><img src="images/icon_vk.png" height="41" width="41" alt=""></a></li>
+                                    <li><a href=""><img src="images/icon_f.png" height="41" width="41" alt=""></a></li>
+                                    <li><a href=""><img src="images/icon_tw.png" height="41" width="41" alt=""></a></li>
+                                </ul>
 
+                            </div>
+                                
                         </form>
                     </div>
 

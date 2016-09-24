@@ -528,6 +528,14 @@
     clear: both;
     visibility: hidden;
    }
+   .image_box {
+      text-align: center;
+      margin: 0 auto;
+    }
+    .image_box img {
+      max-width: 100%;
+      height: auto;
+    }
 
 /* ------------------------------------------------
 
@@ -884,10 +892,16 @@ label.error {
   border-bottom: 1px solid #006aaf;
 }
 
-.form_box_open {
-  display: none;
+.title_thanks {
+  text-align: center;
+  color: #006aaf;
+  padding-bottom: 20px;
 }
-
+.title_fail {
+  text-align: center;
+  color: #e97da9;
+  padding-bottom: 20px;
+}
     /* --------------------------------------------
         6.4. Calendar
   -------------------------------------------- */
@@ -1121,8 +1135,8 @@ body .box:before {
   position: absolute;
 }
 .rabbit_1 {
-  top: 660px;
-  left: 66px;
+  top: 670px;
+  left: 0px;
 }
 .rabbit_2 {
   top: 510px;
@@ -1241,8 +1255,4 @@ body .box:before {
 }
 .main_foto_resp {
   display: none;
-}
-
-.four_box_pink .cont_box {
-  border: 1px solid #e97da9;
 }

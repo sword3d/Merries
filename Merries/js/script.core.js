@@ -67,7 +67,7 @@
 
 				self.select = $('#qtChildren');
 				self.box = $('#cildren_qt_box');
-				self.temtpate = '<div class="cildren_line"></div><div><div class="form_box"><label>Какими подгузниками пользовались</label><select><option>Подгузник 1</option><option>Подгузник 2</option><option>Подгузник 3</option><option>Подгузник 4</option></select></div></div><div class="row clearfix"><div class="col-50pr"><div class="form_box"><label>Дата рождения</label><div class="calendar_wr"><span class="icon_calendar"></span><input class="calendar" data-lang="ru" data-years="1990-2016" data-format="LL" data-sundayfirst="false" placeholder=""/></div></div></div><div class="col-50pr"><div class="form_box"><label>Пол</label><select><option>Мальчик</option><option>Девочка</option></select></div></div></div>';
+				self.temtpate = self.box.html();
 
 				self.events();
 
@@ -80,6 +80,7 @@
 				self.select.on('change', function(){
 					self.check();
 					$(".calendar").ionDatePicker();
+					//$(".validateform").validate();
 				});
 
 			},
