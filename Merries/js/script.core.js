@@ -92,7 +92,7 @@
 				self.box.html('');
 
 				for (var i = 1; i <= self.select.val(); i++) {
-					self.box.append(self.temtpate);
+					self.box.append(self.temtpate).find('.cildren_qt_item').eq(i-1).find('.calendar').attr('name', i);
 				}
 			},
 
