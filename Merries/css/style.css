@@ -40,6 +40,7 @@
   
   9. Campaignslist
   10. End
+  11. Diagram
 
 */
 @import "reset.css";
@@ -1257,3 +1258,63 @@ body .box:before {
 .main_foto_resp {
   display: none;
 }
+
+
+/* ------------------------------------------------
+
+    11. Diagram
+
+------------------------------------------------ */
+
+.diagram {
+  background-color: #ffeff2;
+  border-top: 1px solid #f4dbdf;
+  padding: 50px 0; 
+}
+
+.diagram_title {
+  color: #a25477;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+    .page_nav{
+      text-align: center;
+      font-size: 0;
+      line-height: 0;
+      margin: 20px 0;
+    }
+
+    .page_nav:not(:last-child){
+      margin-bottom: 32px;
+    }
+
+    .page_nav li{
+      display: inline-block;
+      padding: 0px 10px;
+    }
+
+    .page_nav li a,
+    .page_nav li span{
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 20px;
+      color: #616161;
+      padding: 5px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .page_nav li a:hover{
+      color: #ae6987;
+    }
+    .page_nav li span {
+      color: #ae6987;
+    }
+
+    .page_nav li.current a,
+    .page_nav li.current span{
+      color: #ae6987;
+      text-decoration: none;
+    }

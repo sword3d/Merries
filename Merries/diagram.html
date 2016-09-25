@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Basic page needs
+        ============================================ -->
+        <title>Home page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <!-- Mobile specific metas
+        ============================================ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+        <!-- Libs CSS
+        ============================================ -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic-ext" rel="stylesheet">
+        
+
+        <!-- Favicon
+        ============================================ -->
+        <!-- <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico"> -->
+        <link rel="stylesheet" href="plugins/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.css">
+        <link rel="stylesheet" href="plugins/ion.calendar-2.0.2/css/ion.calendar.css">
+
+        <!-- Theme CSS
+        ============================================ -->
+        <!-- <link rel="stylesheet" href="css/se.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Media Queries CSS
+        ============================================ -->
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!-- Old IE 
+        ============================================ -->
+
+        <!--[if lt IE 8]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+          </a>
+        </div>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <![endif]-->
+
+
+    </head>
+
+    <body>
+
+        <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+
+        <div id="header" role="banner">
+            
+            <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+
+            <div class="container">
+                <div class="align_center">
+                    <a href=""><img src="images/logo_merries.png" width="130" alt=""></a>
+                </div>
+            </div>
+             
+            <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - - - - - - - - - Page Nav - - - - - - - - - - - - - - - - -->
+                    
+                <ul class="page_nav">
+                                                 
+                    <li class="current"><span>Количество заказанных образцов</span></li>
+                    <li><a href="javascript:;">Данные по участникам </a></li>
+                    <li><a href="javascript:;">Данные по работам</a></li>
+                    <li><a href="javascript:;">Рейтинг источников</a></li>
+                                                           
+                </ul>
+
+               <!-- - - - - - - - - - - - - - End of Page Nav - - - - - - - - - - - - - - - - -->
+
+        </div>
+
+        <!-- - - - - - - - - - - - - - End of Header - - - - - - - - - - - - - - - - -->
+
+        <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+
+        <section>
+
+            <div class="diagram">
+
+                <div class="container">
+
+                    <div class="align_center">
+                        <h6 class="diagram_title">Количество заказанных образцов</h6>
+                    </div>
+
+                    <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+
+                    <!-- - - - - - - - - - - - - - Page Nav - - - - - - - - - - - - - - - - -->
+                            
+                    <ul class="page_nav">
+                                                     
+                        <li><a href="javascript:;">День</a></li>
+                        <li><a href="javascript:;">Неделя</a></li>
+                        <li><span>Месяц</span></li>
+                                                                                  
+                    </ul>
+
+                   <!-- - - - - - - - - - - - - - End of Page Nav - - - - - - - - - - - - - - - - -->
+                   
+
+                    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+            
+
+                    
+               </div>
+ 
+            </div>
+
+            
+        </section>
+
+        <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
+
+
+
+
+        <!-- Include Libs & Plugins
+        ============================================ -->
+        <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+
+        <script type="text/javascript" src="plugins/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.min.js"></script>
+        <script src="plugins/masonry.pkgd.min.js"></script>
+        <script src="plugins/jquery.validate.js"></script>
+        <script type="text/javascript" src="plugins/jquery.maskedinput.js"></script>
+
+        <script src="plugins/ion.calendar-2.0.2/js/moment-with-locales.min.js"></script>
+        <script src="plugins/ion.calendar-2.0.2/js/ion.calendar.js"></script>
+
+        <!-- amCharts javascript sources -->
+        <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+        <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+        
+
+        <!-- amCharts javascript code -->
+        <script type="text/javascript">
+            AmCharts.makeChart("chartdiv",
+                {
+                    "type": "serial",
+                    "categoryField": "category",
+                    "startDuration": 1,
+                    "color": "#9E9E9E",
+                    "fontFamily": "Roboto",
+                    "handDrawScatter": 7,
+                    "handDrawThickness": 4,
+                    "theme": "default",
+                    "categoryAxis": {
+                        "gridPosition": "start"
+                    },
+                    "trendLines": [],
+                    "graphs": [
+                        {
+                            "balloonText": "[[title]] of [[category]]:[[value]]",
+                            "bullet": "round",
+                            "id": "AmGraph-1",
+                            "title": "graph 1",
+                            "type": "smoothedLine",
+                            "valueField": "column-1"
+                        },
+                        {
+                            "balloonText": "[[title]] of [[category]]:[[value]]",
+                            "bullet": "square",
+                            "id": "AmGraph-2",
+                            "title": "graph 2",
+                            "type": "smoothedLine",
+                            "valueField": "column-2"
+                        }
+                    ],
+                    "guides": [],
+                    "valueAxes": [
+                        {
+                            "id": "ValueAxis-1",
+                            "title": "Îáðàçöû"
+                        }
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "titles": [
+                        {
+                            "id": "Title-1",
+                            "size": 15,
+                            "text": "Êîëè÷åñòâî çàêàçàííûõ îáðàçöîâ"
+                        }
+                    ],
+                    "dataProvider": [
+                        {
+                            "category": "1.09",
+                            "column-1": 8
+                        },
+                        {
+                            "category": "2.09",
+                            "column-1": 6
+                        },
+                        {
+                            "category": "3.09",
+                            "column-1": 2
+                        },
+                        {
+                            "category": "4.09",
+                            "column-1": 1
+                        },
+                        {
+                            "category": "5.09",
+                            "column-1": 2
+                        },
+                        {
+                            "category": "6.09",
+                            "column-1": 3
+                        },
+                        {
+                            "category": "7.09",
+                            "column-1": 6
+                        }
+                    ]
+                }
+            );
+        </script>
+
+
+        <!-- Theme files
+        ============================================ -->
+        <script src="js/script.core.js"></script>
+        <script src="js/script.plugins.js"></script>
+        
+    </body>
+</html>
