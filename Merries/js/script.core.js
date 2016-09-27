@@ -11,6 +11,7 @@
 			self.openTopBox();
 			self.formOpen();
 			self.childrenQt.init();
+			self.AnotherCity();
 
 		},
 
@@ -96,7 +97,33 @@
 				}
 			},
 
-		}
+		},
+
+		/**
+		**	Another City
+		**/
+
+		AnotherCity: function(){
+
+			$('.select_city').on('change', function(){
+				
+				var $this = $(this),
+					anotherCity = $this.find('option:selected').attr('data-city'),
+					input = $this.next();
+
+				if(+anotherCity){
+					input.attr('type','text').prop('required',true);
+					$(".validateform").validate();
+				}
+				else{
+					input.attr('type','hidden').prop('required',false);
+					$(".validateform").validate();
+				}
+
+			});
+
+		},
+
 
 
 	}
