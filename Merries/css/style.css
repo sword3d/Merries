@@ -1339,3 +1339,24 @@ body .box:before {
       color: #ae6987;
       text-decoration: none;
     }
+
+.instructions {
+  max-width: 840px;
+  
+  padding: 30px;
+  padding-right: 10px;
+  margin: 0 auto;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  background-color: #ffffff;
+ 
+}
+.instructions_box {
+   overflow: auto;
+   height: 230px;
+   padding-right: 30px;
+}
+.instructions_line {
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 15px;
+}
