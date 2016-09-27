@@ -1173,6 +1173,7 @@ body .box:before {
 .social_box {
   margin-left: -6px;
   margin-right: -6px;
+  padding-top: 10px;
 }
 .social_box li {
   display: inline-block;
@@ -1181,11 +1182,28 @@ body .box:before {
 .social_box a {
   display: block;
 }
-.social_box a:hover {
+.social_box li:not([class="active"]) a:hover {
   -moz-transform:  scale(1.1);
      -o-transform:   scale(1.1);
      -webkit-transform: scale(1.1);
      transform:  scale(1.1);
+}
+
+.social_box li.active>a, .social_box li>span {
+  position: relative;
+  display: block;
+}
+.social_box li.active>a:before, .social_box li>span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -13px;
+  right: -9px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #006aaf;
+  border-radius: 100%;
+  background:  url(../images/blue_ok_icon.png) center center no-repeat;
 }
 /* ------------------------------------------------
 
