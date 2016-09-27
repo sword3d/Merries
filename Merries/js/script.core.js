@@ -29,7 +29,7 @@
 		openTopBox : function(){
 
 		    $(".btn_open_top_box").on('click', function () {
-            	$(this).toggleClass("active").parent().prevAll(".open_top_box").slideToggle("medium");
+            	$(this).toggleClass("active").parent().prev(".four_box_wr").find(".hide").toggleClass("active");
             });
 
 		},

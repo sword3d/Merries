@@ -1018,6 +1018,9 @@ body .box:before {
   float: left;
   word-wrap: break-word;
 }
+.four_box.active {
+  display: block;
+}
 .four_box_offset {
   padding-top: 50px;
   padding-bottom: 30px;
