@@ -811,6 +811,7 @@ label.error {
 
 
 .box-modal-3 {
+    width: 560px;
     max-width: 560px;
     background-color: #ffffff;
     border-radius: 15px;

@@ -640,20 +640,101 @@
                                 
                                     <div class="col-33pr">
                                         <div class="form_box">
+                                            <label>Фамилия</label>
+                                            <input required type="text" value="" name="l_name" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-33pr">
+                                        <div class="form_box">
+                                            <label>Имя</label>
+                                            <input required type="text" value="" name="name" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-33pr">
+                                        <div class="form_box">
+                                            <label> Отчество</label>
+                                            <input required type="text" value="" name="m_name" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+
+                                <div class="row clearfix">
+
+                                    <div class="col-50pr">
+                                        <div class="form_box">
+                                            <label>Номер телефона</label>
+                                            <input type="text" placeholder="" required name="number" class="phone_mask"> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-50pr">
+                                        <div class="form_box">
+                                            <label>E-mail</label>
+                                            <input required type="text" value="" name="email" placeholder="" />
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+
+                                <div class="row clearfix">             
+                                    
+                                    <div class="col-50pr">
+                                        <div class="form_wr radio_box_wr">
+
+                                            <div class="form_box">
+                                                <label>Дата рождения</label>
+                                                <!-- <input required type="date" value="" name="date" placeholder="" /> -->
+                                    
+                                                <div class="calendar_wr">
+                                                    <span class="icon_calendar"></span>
+                                                    <input required maxlength="8" class="calendar" data-lang="ru" data-years="1960-2016" data-format="LL" data-sundayfirst="false" placeholder="" name="calendar1" />
+                                                </div>
+                                                
+                                    
+                                            </div>
+                                       
+                                        </div>
+                                    </div>
+
+                                    <div class="col-50pr">
+
+                                        <div class="form_box">
+                                            <label>Город</label>
+                                            <select>
+                                                <option>Город 1</option>
+                                                <option>Город 2</option>
+                                                <option>Город 3</option>
+                                                <option>Город 4</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row clearfix">
+                                
+                                    <div class="col-33pr">
+                                        <div class="form_box">
                                             <label>Индекс</label>
-                                            <input required type="text" value="" name="postcode" placeholder="" />
+                                            <input required type="text" value="" name="postcode2" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-33pr">
                                         <div class="form_box">
                                             <label>Улица</label>
-                                            <input required type="text" value="" name="street" placeholder="" />
+                                            <input required type="text" value="" name="street2" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-33pr">
                                         <div class="form_box">
                                             <label>Дом</label>
-                                            <input required type="text" value="" name="building" placeholder="" />
+                                            <input required type="text" value="" name="building2" placeholder="" />
                                         </div>
                                     </div>
                                 
@@ -664,140 +745,19 @@
                                     <div class="col-33pr">
                                         <div class="form_box">
                                             <label>Корпус/Строение</label>
-                                            <input required type="text" value="" name="housing" placeholder="" />
+                                            <input required type="text" value="" name="housing2" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-33pr">
                                         <div class="form_box">
                                             <label>Квартира</label>
-                                            <input required type="text" value="" name="apartment" placeholder="" />
+                                            <input required type="text" value="" name="apartment2" placeholder="" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="cildren_line"></div>
 
-                            <div class="row clearfix">
-                                
-                                <div class="col-33pr">
-                                    <div class="form_box">
-                                        <label>Фамилия</label>
-                                        <input required type="text" value="" name="l_name" placeholder="" />
-                                    </div>
-                                </div>
-                                <div class="col-33pr">
-                                    <div class="form_box">
-                                        <label>Имя</label>
-                                        <input required type="text" value="" name="name" placeholder="" />
-                                    </div>
-                                </div>
-                                <div class="col-33pr">
-                                    <div class="form_box">
-                                        <label> Отчество</label>
-                                        <input required type="text" value="" name="m_name" placeholder="" />
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            
-
-                            <div class="row clearfix">
-
-                                <div class="col-50pr">
-                                    <div class="form_box">
-                                        <label>Номер телефона</label>
-                                        <input type="text" placeholder="" required name="number" class="phone_mask"> 
-                                    </div>
-                                </div>
-                                
-                                <div class="col-50pr">
-                                    <div class="form_box">
-                                        <label>E-mail</label>
-                                        <input required type="text" value="" name="email" placeholder="" />
-                                    </div>
-                                </div>
-                                
-
-                            </div>
-
-                            <div class="row clearfix">             
-                                
-                                <div class="col-50pr">
-                                    <div class="form_wr radio_box_wr">
-
-                                        <div class="form_box">
-                                            <label>Дата рождения</label>
-                                            <!-- <input required type="date" value="" name="date" placeholder="" /> -->
-                                
-                                            <div class="calendar_wr">
-                                                <span class="icon_calendar"></span>
-                                                <input required maxlength="8" class="calendar" data-lang="ru" data-years="1960-2016" data-format="LL" data-sundayfirst="false" placeholder="" name="calendar1" />
-                                            </div>
-                                            
-                                
-                                        </div>
-                                   
-                                    </div>
-                                </div>
-
-                                <div class="col-50pr">
-
-                                    <div class="form_box">
-                                        <label>Город</label>
-                                        <select>
-                                            <option>Город 1</option>
-                                            <option>Город 2</option>
-                                            <option>Город 3</option>
-                                            <option>Город 4</option>
-                                        </select>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="row clearfix">
-                            
-                                <div class="col-33pr">
-                                    <div class="form_box">
-                                        <label>Индекс</label>
-                                        <input required type="text" value="" name="postcode2" placeholder="" />
-                                    </div>
-                                </div>
-                                <div class="col-33pr">
-                                    <div class="form_box">
-                                        <label>Улица</label>
-                                        <input required type="text" value="" name="street2" placeholder="" />
-                                    </div>
-                                </div>
-                                <div class="col-33pr">
-                                    <div class="form_box">
-                                        <label>Дом</label>
-                                        <input required type="text" value="" name="building2" placeholder="" />
-                                    </div>
-                                </div>
-                            
-                            </div>
-                            
-                            <div class="row clearfix">
-                            
-                                <div class="col-33pr">
-                                    <div class="form_box">
-                                        <label>Корпус/Строение</label>
-                                        <input required type="text" value="" name="housing2" placeholder="" />
-                                    </div>
-                                </div>
-                                <div class="col-33pr">
-                                    <div class="form_box">
-                                        <label>Квартира</label>
-                                        <input required type="text" value="" name="apartment2" placeholder="" />
-                                    </div>
-                                </div>
-                            </div>
-                            
                             <div class="cildren_line"></div>
 
                             <div class="row clearfix">
