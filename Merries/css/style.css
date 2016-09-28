@@ -810,6 +810,19 @@ label.error {
 
 }
 
+.checkbox_container:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.checkbox_container>.form_box:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.checkbox_container>.form_box label.error{
+  top: 100%;
+  bottom: auto;
+}
+
 
 .box-modal-3 {
     width: 560px;
@@ -957,6 +970,27 @@ body .box:before {
 }    
 .box_1:before {
   background:  url(../images/bg_box_1.png) 0 0 no-repeat;
+}
+
+.logo_merries{
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.logo_text{
+  margin-top: -10px;
+}
+.logo_merries>sup{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 40px;
+  padding-top: 30px;
+  margin-left: -30px;
+}
+
+.logo_text{
+  padding-left: 30px;
 }
 
 .two_box_left {
@@ -1154,7 +1188,7 @@ body .box:before {
   right: -50px;
 }
 .rabbit_4 {
-  top: 0px;
+  top: -70px;
   left: 0px;
 }
 .rabbit_end_1 {
@@ -1360,5 +1394,21 @@ body .box:before {
 }
 .instructions_line {
   border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 15px;
+}
+
+.instructions_box ul:not([class]){
+  padding-left: 20px;
+}
+
+.instructions_box ul:not([class]):not(:last-child){
+  margin-bottom: 20px;
+}
+
+.instructions_box ul:not([class]) li{
+  list-style: disc outside;
+}
+
+.instructions_box ul:not([class]) li:not(:last-child){
   margin-bottom: 15px;
 }
