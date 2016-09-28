@@ -786,6 +786,7 @@ select {
   color: #000;
   height: 32px;
   border-radius: 3px;
+  background-color: #ffffff;
 }
 .form_box {
   position: relative;
