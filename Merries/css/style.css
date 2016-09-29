@@ -972,25 +972,20 @@ body .box:before {
   background:  url(../images/bg_box_1.png) 0 0 no-repeat;
 }
 
-.logo_merries{
-  position: relative;
-  font-size: 14px;
-  line-height: 16px;
-}
 
-.logo_text{
-  margin-top: -10px;
-}
-.logo_merries>sup{
+.logo_stars{
   display: inline-block;
   vertical-align: top;
-  font-size: 40px;
-  padding-top: 30px;
+  color: #e97da9;
+  font-size: 25px;
+  padding-top: 50px;
   margin-left: -30px;
+  font-weight: 700;
 }
 
-.logo_text{
-  padding-left: 30px;
+.rabbit_4 .logo_stars{
+  padding-top: 30px;
+  margin-left: -10px;
 }
 
 .two_box_left {
@@ -1296,7 +1291,7 @@ body .box:before {
   overflow: hidden;
 }
 .campaignslist_wr {
-  padding-top: 70px;
+  /*padding-top: 70px;*/
 }
 .pb_60 {
   padding-bottom: 60px;
