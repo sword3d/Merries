@@ -582,6 +582,8 @@
          padding: 75px 0 0;
       }
 
+      .mb30{margin-bottom: 30px;}
+
 /* ------------------------------------------------
 
     5. Header
@@ -972,22 +974,6 @@ body .box:before {
   background:  url(../images/bg_box_1.png) 0 0 no-repeat;
 }
 
-
-.logo_stars{
-  display: inline-block;
-  vertical-align: top;
-  color: #e97da9;
-  font-size: 25px;
-  padding-top: 50px;
-  margin-left: -30px;
-  font-weight: 700;
-}
-
-.rabbit_4 .logo_stars{
-  padding-top: 30px;
-  margin-left: -10px;
-}
-
 .two_box_left {
   width: 50%;
   float: left;
@@ -1053,7 +1039,7 @@ body .box:before {
   display: block;
 }
 .four_box_offset {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 .cont_box {
@@ -1382,6 +1368,11 @@ body .box:before {
   background-color: #ffffff;
  
 }
+
+.instructions:not(:last-child){
+  margin-bottom: 50px;
+}
+
 .instructions_box {
    overflow: auto;
    height: 230px;
