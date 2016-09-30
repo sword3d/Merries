@@ -1065,11 +1065,14 @@
                                 <div class="col-50pr">
                                     <div class="form_box">
                                         <label>Количество детей</label>
-                                        <select id="qtChildren">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
+                                        <select id="qtChildren" name="num_childs" class="valid" aria-invalid="false">
+
+                                            <option value="30" selected="" data-num="1">1</option>
+                                            <option value="31" data-num="2">2</option>
+                                            <option value="32" data-num="3">3</option>
+                                            <option value="33" data-num="4">4</option>
+                                            <option value="34" data-num="1">Больше 4-х</option>
+                                            <option value="35" data-num="1" data-wait="1">Жду ребенка</option>                                       
                                         </select>
                                     </div>
                                 </div>
@@ -1088,7 +1091,7 @@
                                     
                                         <div class="col-50pr">
                                             <div class="form_box">
-                                                <label>Дата рождения</label>
+                                                <label><span class="s">Дата рождения</span><span class="h">Ожидаемая дата рождения</span></label>
                                                 <!-- <input required type="date" value="" name="date" placeholder="" /> -->
                                     
                                                 <div class="calendar_wr">
@@ -1114,7 +1117,7 @@
 
                                     <div>
                                         <div class="form_box">
-                                            <label>Какими подгузниками пользовались</label>
+                                            <label><span class="s">Какими подгузниками пользовались</span><span class="h">Какими подгузниками планируете пользоваться?</span></label>
                                             <select>
                                                 <option>Подгузник 1</option>
                                                 <option>Подгузник 2</option>

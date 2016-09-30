@@ -1398,3 +1398,13 @@ body .box:before {
 .instructions_box ul:not([class]) li:not(:last-child){
   margin-bottom: 15px;
 }
+
+.h {
+  display: none;
+}
+.wait .h {
+  display: block;
+}
+.wait .s {
+  display: none;
+}

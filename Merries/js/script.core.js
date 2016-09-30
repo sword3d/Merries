@@ -82,6 +82,20 @@
 					self.check();
 					$(".calendar").ionDatePicker();
 					//$(".validateform").validate();
+
+					self.wait = self.select.find('option:selected').attr('data-wait');
+
+					if($(self.wait == 1).length){ 
+
+						self.select.addClass('wait');
+						self.box.addClass('wait');
+
+			        }
+			        else {
+			        	self.select.removeClass('wait');
+						self.box.removeClass('wait');
+			        }
+
 				});
 
 			},
@@ -92,7 +106,10 @@
 				
 				self.box.html('');
 
-				for (var i = 1; i <= self.select.val(); i++) {
+				// for (var i = 1; i <= self.select.val(); i++) {
+				// 	self.box.append(self.temtpate).find('.cildren_qt_item').eq(i-1).find('.calendar').attr('name', i);
+				// }
+				for (var i = 1; i <= self.select.find('option:selected').attr('data-num'); i++) {
 					self.box.append(self.temtpate).find('.cildren_qt_item').eq(i-1).find('.calendar').attr('name', i);
 				}
 			},
